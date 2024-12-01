@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {Baloo_Bhai_2} from "next/font/google";
 import "./globals.css";
+import Navbar from "./component/navbar";
+
+const yeonSung = Baloo_Bhai_2({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-yeon-sung",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,9 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${yeonSung.className} bg-cyan-100`}>
+        <Navbar/>
         {children}
       </body>
     </html>
