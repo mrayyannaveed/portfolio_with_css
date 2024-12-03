@@ -1,5 +1,5 @@
 import Image from "next/image"
-import rayyan from "../../../public/rayyan.png";
+import rayyan from "../../../public/Honda_City.jpg";
 const About = () => {
     return(
         <div>
