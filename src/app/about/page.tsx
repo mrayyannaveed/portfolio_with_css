@@ -1,15 +1,18 @@
 import Image from "next/image"
-import rayyan from "../../../public/Honda_City.jpg";
+import rayyan from "../../../public/rayyan.png";
+import "./about.css"
 const About = () => {
     return(
         <div>
-            <section className="flex justify-around w-[90% min-h-[60vh] items-center m-auo">
-                <div className="pl-3 w-1/3">
-                    <h1 className="text-4xl font-bold ">About me</h1>
-                    <p className="text-lg my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reprehenderit deleniti repellat ipsum.</p>
-                    <button className="bg-yellow-500 px-4 py-2 hover:bg-yellow-300 font-bold rounded-lg">Resume</button>
+            <section id="about-cont">
+                <div id="about-left">
+                    <h1>About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reprehenderit deleniti repellat ipsum.</p>
+                    <button id="about-btn">Resume</button>
                 </div>
-                <Image className="rounded-full w-72 h-72 object-cover "  src={rayyan} alt="RayyanNaveed" ></Image>
+                <div id="about-right">
+                <Image id="about-img" className=""  src={rayyan} alt="RayyanNaveed" ></Image>
+                </div>
             </section>
         </div>
     )

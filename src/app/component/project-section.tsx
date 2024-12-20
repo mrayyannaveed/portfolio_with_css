@@ -1,13 +1,15 @@
 import Image from "next/image"
-function ProjectBox(prop:any){
+import "./project.css"
+function ProjectBox(props:any){
     return(
         <div>
-            <section className="bg-teal-300 w-[70%] m-auto h-96 flex rounded-2xl">
-                <div className="w-1/2 bg-purple-20 h-[100%] content-center">
-                <h1 className="text-center text-xl font-bold">{prop.head}</h1>
+            <section id="project-cont">
+                <div id="project-left">
+                <h1>{props.head}</h1>
+                <p>{props.desc}</p>
                 </div>
-                <div className="w-1/2 bg-yellow-20">
-                <Image className="h-full w-full"  src={prop.image} alt={prop.alt}></Image>
+                <div id="project-right">
+                <Image id="project-img"  src={props.image} alt={props.alt} width={500} height={500}></Image>
                 </div>
             </section>
         </div>

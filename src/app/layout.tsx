@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${yeonSung.className} bg-cyan-100`}>
+      <body className={`${yeonSung.className} bg-blue-600`}>
         <Navbar/>
         {children}
       </body>
