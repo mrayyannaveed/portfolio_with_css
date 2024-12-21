@@ -1,7 +1,9 @@
+
 #nav{
     display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-between;
-    /* background-color: rgb(69, 1, 69); */
     background-color: rgb(1, 6, 69);
     height: 8vh;
     align-items: center;
@@ -9,7 +11,7 @@
 
 #nav #left-cont{
     font-size: large;
-    width: 25%;
+    width: 40%;
     padding: 1px;
     color: white;
     text-align: center;
@@ -26,11 +28,12 @@
 }
 
 #nav #right-cont{
-    width: 33%;
+    width: 50%;
     font-size: large;
     justify-content: space-around;
     color: white;
     display: flex;
+    margin-right: 50px;
     animation: navAnimate 2s infinite ease-in-out 1s alternate;
 
 }

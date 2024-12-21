@@ -4,7 +4,7 @@ import Link from "next/link"
 import "./hero.css"
 const Hero = () => {
     return(
-        <div>
+        <div style={{marginTop:100}}>
             <div id="hero-cont">
                 <section id="left-cont">
                 <h1>Hello, my name is Muhammad Rayyan</h1>

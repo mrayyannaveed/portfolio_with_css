@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import {Baloo_Bhai_2} from "next/font/google";
 import "./globals.css";
-import Navbar from "./component/navbar";
+import MainMenu from "@/components/mainmenu";
+import Footer from "./component/footer";
 
 const yeonSung = Baloo_Bhai_2({
   subsets: ["latin"],
@@ -34,8 +35,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${yeonSung.className} bg-blue-600`}>
-        <Navbar/>
+        {/* <Navbar/> */}
+        <MainMenu/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
